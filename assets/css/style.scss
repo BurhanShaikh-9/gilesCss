@@ -220,11 +220,7 @@ input[type=range] {
         }
     }
 
-    .bannerSectionBtns {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
+   
 }
 
 .featureSection {
@@ -607,7 +603,7 @@ footer {
 
         .bannerSectionBtns {
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             align-items: start;
         }
     }
