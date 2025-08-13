@@ -220,7 +220,7 @@ input[type=range] {
         }
     }
 
-   
+
 }
 
 .featureSection {
@@ -568,7 +568,21 @@ footer {
 
 }
 
+.privacyPolicyModal {
+    ul {
+        margin-left: 70px;
+        font-size: 14px;
+    }
 
+    .orderList {
+        margin-left: 30px;
+        padding: 16px 0px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+}
 
 
 @media (max-width: 991px) {

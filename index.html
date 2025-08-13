@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBG Health Plan</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/logo/1.png">
+    <title>CBG</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/favIcon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/mqscroller.min.css">
-    <link rel="stylesheet" href="https://giles-css.vercel.app/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="https://giles-css.vercel.app/assets/css/style.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -133,7 +134,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <video class="welcomeVideo" autoplay muted playsinline loop controls>
+                    <video id="welcomeVideo" class="welcomeVideo" autoplay muted playsinline loop controls>
                         <source src="assets/images/welcome/1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -562,7 +563,8 @@
                         <li><a href="">Case Studies</a></li>
                         <li><a href="">Blog & Insights</a></li>
                         <li><a href="">Contact Us</a></li>
-                        <li><a href="">Privacy Policy</a></li>
+                        <li><a style="cursor: pointer;" class="text-white" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footerCol col-12 col-lg-3">
@@ -584,6 +586,233 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade modal-dialog-scrollable modal-xl" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Privacy Policy</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body privacyPolicyModal">
+
+
+                    <p>Welcome to <strong>CBG</strong>("we","us","our"). We are committed to protecting your privacy and
+                        the
+                        security of your
+                        information. This Privacy Policy explains how we collect, use, disclose, and safeguard your
+                        information when you visit our website <strong>[www.cbg..com]</strong>&nbsp;(the "Site").</p>
+                    <p>By using the Site, you agree to the practices described in this Privacy Policy, which also
+                        incorporates our obligations under the&nbsp;<strong>Health Insurance Portability and
+                            Accountability Act (HIPAA)</strong>&nbsp;when handling Protected Health Information (PHI).
+                    </p>
+                    <hr />
+                    <h3><strong>1. Information We Collect</strong></h3>
+                    <p class="orderList"><strong>a. Information You Provide</strong></p>
+                    <ul>
+                        <li>
+                            <p>Personal information (name, email address, phone number).</p>
+                        </li>
+                        <li>
+                            <p>Account credentials (username, password).</p>
+                        </li>
+                        <li>
+                            <p>Insurance-related information, benefit selections, claims information, and other details
+                                you voluntarily submit.</p>
+                        </li>
+                        <li>
+                            <p>Communications such as inquiries, forms, and feedback.</p>
+                        </li>
+                    </ul>
+                    <p class="orderList"><strong>b. Automatically Collected Information</strong></p>
+                    <ul>
+                        <li>
+                            <p>Device and browser data (IP address, operating system, browser type).</p>
+                        </li>
+                        <li>
+                            <p>Site usage data via cookies or analytics tools.</p>
+                        </li>
+                    </ul>
+                    <p class="orderList"><strong>c. Third-Party Data</strong></p>
+                    <ul>
+                        <li>
+                            <p>Information provided by benefits administrators, employers, or healthcare providers if
+                                authorized.</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <h3><strong>2. HIPAA Compliance and Protected Health Information (PHI)</strong></h3>
+                    <p class="orderList">When handling PHI&mdash;information that relates to your past, present, or
+                        future physical or
+                        mental health, healthcare services, or payment for those services&mdash;we comply fully with
+                        HIPAA regulations.</p>
+                    <p class="orderList"><strong>a. How We Use PHI</strong><strong></strong>&nbsp; <br>PHI may be used
+                        or disclosed to:
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Process benefits and claims.</p>
+                        </li>
+                        <li>
+                            <p>Coordinate healthcare coverage and services.</p>
+                        </li>
+                        <li>
+                            <p>Respond to requests from authorized individuals or entities.</p>
+                        </li>
+                        <li>
+                            <p>Conduct healthcare operations, such as quality assessments or audits.</p>
+                        </li>
+                    </ul>
+                    <p class="orderList"><strong>b. How We Protect PHI</strong><strong></strong>&nbsp; <br>We implement
+                        administrative,
+                        technical, and physical safeguards to protect PHI, including:</p>
+                    <ul>
+                        <li>
+                            <p>Secure data encryption in transit and at rest.</p>
+                        </li>
+                        <li>
+                            <p>Role-based access controls.</p>
+                        </li>
+                        <li>
+                            <p>Regular compliance training for employees handling PHI.</p>
+                        </li>
+                        <li>
+                            <p>Audit trails and monitoring.</p>
+                        </li>
+                    </ul>
+                    <p class="orderList"><strong>c. Your HIPAA Rights</strong><strong></strong>&nbsp;Under HIPAA, you
+                        have the right
+                        to:</p>
+                    <ul>
+                        <li>
+                            <p>Access and obtain a copy of your PHI.</p>
+                        </li>
+                        <li>
+                            <p>Request corrections to your PHI.</p>
+                        </li>
+                        <li>
+                            <p>Receive an accounting of disclosures.</p>
+                        </li>
+                        <li>
+                            <p>Request restrictions on certain uses or disclosures.</p>
+                        </li>
+                        <li>
+                            <p>Request communications be sent to you in a specific way or location.</p>
+                        </li>
+                        <li>
+                            <p>File a complaint with us or the U.S. Department of Health and Human Services (HHS) if you
+                                believe your HIPAA rights have been violated.</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <h3><strong>3. Other Uses of Personal Information</strong></h3>
+                    <p class="orderList">Outside of PHI, we may use non-health personal information to:</p>
+                    <ul>
+                        <li>
+                            <p>Operate and improve our Site.</p>
+                        </li>
+                        <li>
+                            <p>Respond to general inquiries.</p>
+                        </li>
+                        <li>
+                            <p>Provide newsletters or updates (with your consent).</p>
+                        </li>
+                        <li>
+                            <p>Prevent fraud and enhance security.</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <h3><strong>4. Data Sharing</strong></h3>
+                    <p class="orderList">We do <strong>not</strong> sell your personal data or PHI. We may share data
+                        only with:
+                    </p>
+                    <ul>
+                        <li>
+                            <p>Authorized healthcare providers, insurers, or administrators.</p>
+                        </li>
+                        <li>
+                            <p>HIPAA-compliant service providers who support our operations.</p>
+                        </li>
+                        <li>
+                            <p>Legal authorities if required by law.</p>
+                        </li>
+                        <li>
+                            <p>Successor organizations in the event of a merger or acquisition, under the same privacy
+                                protections.</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <h3><strong>5. Cookies &amp; Tracking Technologies</strong></h3>
+                    <p class="orderList">We use cookies to:</p>
+                    <ul>
+                        <li>
+                            <p>Improve website performance.</p>
+                        </li>
+                        <li>
+                            <p>Remember user preferences.</p>
+                        </li>
+                        <li>
+                            <p>Collect analytics for site optimization.</p>
+                        </li>
+                    </ul>
+                    <p class="orderList">These cookies <strong>do not</strong> collect PHI unless you explicitly enter
+                        it into a
+                        web form.</p>
+                    <hr />
+                    <h3><strong>6. Data Retention</strong></h3>
+                    <ul>
+                        <li>
+                            <p><strong>PHI</strong>: Retained according to HIPAA requirements, generally a minimum of 6
+                                years from the date of creation or last effective date, whichever is later.
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Other Personal Data</strong>: Retained only as long as necessary for its intended
+                                purpose.</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <h3><strong>7. Security Measures</strong></h3>
+                    <p class="orderList">We use HIPAA-compliant safeguards, including:</p>
+                    <ul>
+                        <li>
+                            <p>Encryption (TLS) for all transmissions.</p>
+                        </li>
+                        <li>
+                            <p>Secure servers with restricted access.</p>
+                        </li>
+                        <li>
+                            <p>Ongoing security monitoring.</p>
+                        </li>
+                        <li>
+                            <p>Regular risk assessments.</p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <h3><strong>8. Minors</strong></h3>
+                    <p class="orderList">We do not knowingly collect PHI or personal data from individuals under the age
+                        of 18 without
+                        appropriate authorization.</p>
+                    <hr />
+                    <h3><strong>9. Changes to This Policy</strong></h3>
+                    <p class="orderList">We may update this policy at any time to reflect changes in law, technology, or
+                        our practices.
+                        Updates will be posted with a revised &ldquo;Last Updated&rdquo; date.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("click", function () {
+            const video = document.getElementById("welcomeVideo");
+            video.muted = false;
+            video.play();
+            console.log('working')
+        }, { once: true });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
